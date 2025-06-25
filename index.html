@@ -7,82 +7,117 @@
   <style>
     body {
       font-family: "Segoe UI", sans-serif;
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 30px;
-      line-height: 1.6;
+      background: #fff;
+      margin: 0;
+      padding: 0;
     }
-    h1, h2 {
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #003366;
+      font-size: 2.4em;
+      font-weight: 700;
+      margin-bottom: 0.3em;
+    }
+
+    h2 {
+      margin-top: 3em;
       color: #003366;
     }
-    .authors {
+
+    .authors, .affiliations, p {
       font-size: 1.05em;
-      margin-bottom: 10px;
+      line-height: 1.6;
+      color: #222;
     }
+
+    .badges {
+      margin: 20px 0;
+    }
+
+    .badges a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+
     iframe {
       width: 100%;
       height: 315px;
-      margin-top: 10px;
-      margin-bottom: 20px;
+      margin-top: 15px;
+      margin-bottom: 25px;
       border: none;
     }
-    .badges a {
-      margin-right: 15px;
-    }
+
     .wip {
-      display: block;
       margin: 30px auto;
-      max-width: 150px;
+      max-width: 100px;
     }
+
     .video-block {
-      margin-top: 20px;
+      text-align: left;
+      margin-top: 30px;
+    }
+
+    .video-block strong {
+      display: block;
+      margin-bottom: 8px;
     }
   </style>
 </head>
 <body>
+  <div class="container">
 
-  <h1>Diffusion-Based Impedance Learning for Contact-Rich Manipulation Tasks</h1>
+    <h1>Diffusion-Based Impedance Learning for Contact-Rich Manipulation Tasks</h1>
 
-  <div class="authors">
-    Noah Geiger<sup>1,2</sup>, Tamim Asfour<sup>1</sup>, Neville Hogan<sup>2,3</sup>, Johannes Lachner<sup>2,3</sup><br>
-    <sup>1</sup> KIT, Institute for Anthropomatics and Robotics, Germany<br>
-    <sup>2</sup> MIT, Department of Mechanical Engineering, USA<br>
-    <sup>3</sup> MIT, Department of Brain and Cognitive Sciences, USA
+    <div class="authors">
+      Noah Geiger<sup>1,2</sup>, Tamim Asfour<sup>1</sup>, Neville Hogan<sup>2,3</sup>, Johannes Lachner<sup>2,3</sup><br><br>
+      <div class="affiliations">
+        <sup>1</sup> KIT, Institute for Anthropomatics and Robotics, Germany<br>
+        <sup>2</sup> MIT, Department of Mechanical Engineering, USA<br>
+        <sup>3</sup> MIT, Department of Brain and Cognitive Sciences, USA
+      </div>
+    </div>
+
+    <p>
+      This research combines diffusion-based generative models and physics-informed control to address robots moving with the same adaptability as humans in physical environments.
+      At its core is a novel integration of denoising diffusion probabilistic models with motor primitive-based robot control, enabling robust real-time impedance adaptation during contact-rich tasks.
+      Our method leverages Transformer-based conditional diffusion models, trained on rich, multimodal datasets collected via Apple Vision Pro teleoperation.
+      The robot’s motion and orientation are refined through iterative denoising, using quaternion-based SLERP for rotational recovery.
+      From physical human-robot interaction to parkour navigation and post-stroke physical therapy, we demonstrate how this unified approach enables robots to remain responsive and robust in the face of unpredictable forces.
+    </p>
+
+    <div class="badges">
+      <a href="#"><img src="https://img.shields.io/badge/arXiv-Coming_Soon-lightgrey?logo=arxiv" alt="arXiv"></a>
+      <a href="#"><img src="https://img.shields.io/badge/GitHub-Repository-grey?logo=github" alt="GitHub"></a>
+    </div>
+
+    <h2>Demonstration Videos</h2>
+
+    <div class="video-block">
+      <strong>1. Teleoperated Data Collection with Apple Vision Pro</strong>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-block">
+      <strong>2. Impedance Adaptation during Human-Robot Interaction</strong>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-block">
+      <strong>3. Stroke Rehabilitation Scenario Demonstration</strong>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" allowfullscreen></iframe>
+    </div>
+
+    <h2>GitHub Repository</h2>
+    <p>Code will be released soon.</p>
+    <img src="https://img.icons8.com/ios-filled/100/000000/under-construction.png" class="wip" alt="Work in Progress">
+
   </div>
-
-  <p>
-    This research combines diffusion-based generative models and physics-informed control to address robots moving with the same adaptability as humans in physical environments.
-    At its core is a novel integration of denoising diffusion probabilistic models with motor primitive-based robot control, enabling robust real-time impedance adaptation during contact-rich tasks.
-    Our method leverages Transformer-based conditional diffusion models, trained on rich, multimodal datasets collected via Apple Vision Pro teleoperation.
-    The robot’s motion and orientation are refined through iterative denoising, using quaternion-based SLERP for rotational recovery.
-    From physical human-robot interaction to parkour navigation and post-stroke physical therapy, we demonstrate how this unified approach enables robots to remain responsive and robust in the face of unpredictable forces.
-  </p>
-
-  <div class="badges">
-    <a href="#"><img src="https://img.shields.io/badge/arXiv-Coming_Soon-lightgrey?logo=arxiv" alt="arXiv"></a>
-    <a href="#"><img src="https://img.shields.io/badge/GitHub-Repository-grey?logo=github" alt="GitHub"></a>
-  </div>
-
-  <h2>Demonstration Videos</h2>
-
-  <div class="video-block">
-    <strong>1. Teleoperated Data Collection with Apple Vision Pro</strong>
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
-  </div>
-
-  <div class="video-block">
-    <strong>2. Impedance Adaptation during Human-Robot Interaction</strong>
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
-  </div>
-
-  <div class="video-block">
-    <strong>3. Stroke Rehabilitation Scenario Demonstration</strong>
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" allowfullscreen></iframe>
-  </div>
-
-  <h2>GitHub Repository</h2>
-  <p>Code will be released soon.</p>
-  <img src="https://img.icons8.com/ios-filled/100/000000/under-construction.png" class="wip" alt="Work in Progress">
-
 </body>
 </html>

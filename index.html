@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Diffusion-Based Impedance Learning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 30px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #003366;
+    }
+    .authors {
+      font-size: 1.05em;
+      margin-bottom: 10px;
+    }
+    iframe {
+      width: 100%;
+      height: 315px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: none;
+    }
+    .badges a {
+      margin-right: 15px;
+    }
+    .wip {
+      display: block;
+      margin: 30px auto;
+      max-width: 150px;
+    }
+    .video-block {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Diffusion-Based Impedance Learning for Contact-Rich Manipulation Tasks</h1>
+
+  <div class="authors">
+    Noah Geiger<sup>1,2</sup>, Tamim Asfour<sup>1</sup>, Neville Hogan<sup>2,3</sup>, Johannes Lachner<sup>2,3</sup><br>
+    <sup>1</sup> KIT, Institute for Anthropomatics and Robotics, Germany<br>
+    <sup>2</sup> MIT, Department of Mechanical Engineering, USA<br>
+    <sup>3</sup> MIT, Department of Brain and Cognitive Sciences, USA
+  </div>
+
+  <p>
+    This research combines diffusion-based generative models and physics-informed control to address robots moving with the same adaptability as humans in physical environments.
+    At its core is a novel integration of denoising diffusion probabilistic models with motor primitive-based robot control, enabling robust real-time impedance adaptation during contact-rich tasks.
+    Our method leverages Transformer-based conditional diffusion models, trained on rich, multimodal datasets collected via Apple Vision Pro teleoperation.
+    The robot’s motion and orientation are refined through iterative denoising, using quaternion-based SLERP for rotational recovery.
+    From physical human-robot interaction to parkour navigation and post-stroke physical therapy, we demonstrate how this unified approach enables robots to remain responsive and robust in the face of unpredictable forces.
+  </p>
+
+  <div class="badges">
+    <a href="#"><img src="https://img.shields.io/badge/arXiv-Coming_Soon-lightgrey?logo=arxiv" alt="arXiv"></a>
+    <a href="#"><img src="https://img.shields.io/badge/GitHub-Repository-grey?logo=github" alt="GitHub"></a>
+  </div>
+
+  <h2>Demonstration Videos</h2>
+
+  <div class="video-block">
+    <strong>1. Teleoperated Data Collection with Apple Vision Pro</strong>
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
+  </div>
+
+  <div class="video-block">
+    <strong>2. Impedance Adaptation during Human-Robot Interaction</strong>
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+  </div>
+
+  <div class="video-block">
+    <strong>3. Stroke Rehabilitation Scenario Demonstration</strong>
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" allowfullscreen></iframe>
+  </div>
+
+  <h2>GitHub Repository</h2>
+  <p>Code will be released soon.</p>
+  <img src="https://img.icons8.com/ios-filled/100/000000/under-construction.png" class="wip" alt="Work in Progress">
+
+</body>
+</html>

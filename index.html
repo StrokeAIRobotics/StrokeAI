@@ -12,6 +12,26 @@
       padding: 0;
     }
 
+    nav {
+      background: #f9f9f9;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+
+    nav div {
+      max-width: 800px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-size: 0.95em;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #003366;
+    }
+
     .container {
       max-width: 800px;
       margin: 0 auto;
@@ -81,6 +101,12 @@
       margin-bottom: 8px;
     }
 
+    .video-block p {
+      margin-top: 0;
+      font-size: 0.95em;
+      color: #444;
+    }
+
     .youtube-wrapper {
       position: relative;
       width: 100%;
@@ -100,6 +126,17 @@
   </style>
 </head>
 <body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div>
+      <a href="#overview">Overview</a>
+      <a href="#data">Data Collection</a>
+      <a href="#deployment">Deployment</a>
+      <a href="#github">GitHub</a>
+    </div>
+  </nav>
+
   <div class="container">
 
     <div class="top-logos">
@@ -131,7 +168,7 @@
       </a>
     </div>
 
-    <p>
+    <p id="overview">
       This research combines diffusion-based generative models and physics-informed control to address robots moving with the same adaptability as humans in physical environments.
       At its core is a novel integration of denoising diffusion probabilistic models with motor primitive-based robot control, enabling robust real-time impedance adaptation during contact-rich tasks.
       Our method leverages Transformer-based conditional diffusion models, trained on rich, multimodal datasets collected via Apple Vision Pro teleoperation.
@@ -144,10 +181,11 @@
       <a href="#"><img src="https://img.shields.io/badge/GitHub-Repository-grey?logo=github" alt="GitHub"></a>
     </div>
 
-    <h2>Data collection for Training</h2>
+    <h2 id="data">Data Collection for Training</h2>
 
     <div class="video-block">
       <strong>1. Teleoperated Data Collection with Apple Vision Pro for Physical Therapy</strong>
+      <p>In this session, a physical therapist guides the robot through personalized arm movements using Apple Vision Pro. The robot records motion and interaction forces to learn adaptive support strategies.</p>
       <div class="youtube-wrapper" style="aspect-ratio: 4 / 3;">
         <iframe src="https://www.youtube.com/embed/AopwOd02GPs" allowfullscreen></iframe>
       </div>
@@ -155,15 +193,17 @@
 
     <div class="video-block">
       <strong>2. Teleoperated Data Collection with Apple Vision Pro for Parkour</strong>
+      <p>This demo shows an operator guiding the robot through a complex physical parkour using Apple Vision Pro, helping the AI model learn contact-rich motion strategies.</p>
       <div class="youtube-wrapper" style="aspect-ratio: 4 / 3;">
         <iframe src="https://www.youtube.com/embed/A7IriNSKP2w" allowfullscreen></iframe>
       </div>
     </div>
 
-    <h2>Deployment on Robot</h2>
+    <h2 id="deployment">Deployment on Robot</h2>
 
     <div class="video-block">
       <strong>1. Physical Therapy Deployment Demonstration</strong>
+      <p>The robot autonomously assists a subject with upper-limb rehabilitation, adjusting its support based on the patient’s effort—just like a therapist would.</p>
       <div class="youtube-wrapper" style="aspect-ratio: 4 / 3;">
         <iframe src="https://www.youtube.com/embed/c_CGfFk4054" allowfullscreen></iframe>
       </div>
@@ -171,12 +211,13 @@
 
     <div class="video-block">
       <strong>2. Parkour Deployment Demonstration</strong>
+      <p>This video highlights the robot’s learned ability to handle complex contact tasks in a parkour scenario, adapting its impedance in real time.</p>
       <div class="youtube-wrapper" style="aspect-ratio: 4 / 3;">
         <iframe src="https://www.youtube.com/embed/xgciy-8BG5o" allowfullscreen></iframe>
       </div>
     </div>
 
-    <h2>GitHub Repository</h2>
+    <h2 id="github">GitHub Repository</h2>
     <p>Code will be released soon.</p>
     <img src="https://img.icons8.com/ios-filled/100/000000/under-construction.png" class="wip" alt="Work in Progress">
 

@@ -149,47 +149,28 @@
 
     <h2>Abstract</h2>
     <p>
-    We present a framework that combines diffusion-based generative models with physics-informed control to enable adaptive behavior 
-      in contact-rich manipulation tasks. The system is trained on human demonstrations captured through Apple Vision Pro teleoperation, 
-      where subjects guide the robot through physical environments under varying interaction conditions. A Transformer-based conditional 
-      diffusion model denoises both translational and rotational data, using quaternions to represent and reconstruct orientation. 
-      During deployment, the robot adapts its impedance in real time based on observed motion and force patterns. This approach enables safe, 
-      compliant, and task-specific interaction, with applications ranging from physical therapy to dynamic parkour.
+     We present a physics-informed diffusion framework for therapist-like robot assistance in upper-limb physical therapy. Unlike purely data-driven methods, our approach 
+    integrates principles of human motor control with energy-consistent impedance control models to generate stable, therapist-like interactions. The diffusion model predicts simulated trajectories 
+      directly from demonstrations, while the physics-informed layer ensures safe force modulation during contact. Validated with healthy participants, the framework achieves therapist-like 
+      adaptability and compliance, highlighting its potential to deliver accessible, personalized therapy in clinical and homecare settings. The framework is progressing to clinical studies 
+      involving patients with neurological and orthopedic impairments.
     </p>
 
-    <h2 id="data">Teleoperated Data Collection for Model Training</h2>
+    <h2 id="data">Human-Guided Upper Limb Therapy Demonstration via Apple Vision Pro</h2>
 
     <div class="video-block">
-      <strong>1. Human-Guided Upper Limb Therapy Demonstration via Apple Vision Pro</strong>
       <p>Teleoperation is used to record patient movements with varying levels of support, enabling the model to learn the dynamic relationship between force and motion.</p>
       <div class="youtube-wrapper" style="aspect-ratio: 4 / 3;">
         <iframe src="https://www.youtube.com/embed/AopwOd02GPs" allowfullscreen></iframe>
       </div>
     </div>
 
-    <div class="video-block">
-      <strong>2. Parkour Trajectory Demonstration via Teleoperation</strong>
-      <p>Teleoperation is used to guide the robot through physical obstacles, enabling the model to learn how interaction forces vary with pose and context.</p>
-      <div class="youtube-wrapper" style="aspect-ratio: 4 / 3;">
-        <iframe src="https://www.youtube.com/embed/A7IriNSKP2w" allowfullscreen></iframe>
-      </div>
-    </div>
-
-    <h2 id="deployment">Model Deployment in Real-World Contact Tasks</h2>
+    <h2 id="deployment">Real-Time Adaptive Support in Upper Limb Therapy Deployment</h2>
 
     <div class="video-block">
-      <strong>1. Real-Time Adaptive Support in Upper Limb Therapy Deployment</strong>
       <p>The robot autonomously assists with upper-limb rehabilitation by adjusting support in real time based on patient engagement.</p>
       <div class="youtube-wrapper" style="aspect-ratio: 4 / 3;">
         <iframe src="https://www.youtube.com/embed/c_CGfFk4054" allowfullscreen></iframe>
-      </div>
-    </div>
-
-    <div class="video-block">
-      <strong>2. Contact-Rich Robot Deployment in a Parkour Environment</strong>
-      <p>The robot performs a parkour task, adapting its impedance in real time to manage contact-rich interactions.</p>
-      <div class="youtube-wrapper" style="aspect-ratio: 1 / 1;">
-        <iframe src="https://www.youtube.com/embed/xgciy-8BG5o" allowfullscreen></iframe>
       </div>
     </div>
 
